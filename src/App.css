@@ -1,0 +1,162 @@
+
+
+
+@keyframes sun-set-animation {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(180deg); }
+}
+
+@keyframes sun-rise-animation {
+  0%   { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.App {
+  text-align: center;
+  min-height: 200vh;
+  transition: all linear 3s;
+}
+
+.flock {
+
+}
+.Bird {
+  position: absolute;
+  animation: flying-bird 1 linear 10s;
+}
+
+@keyframes flying-bird {
+  0% { left: 0%; top: 50%}
+  30% { left: 10%; top: 40%}
+  100% { left: 50%; top: 0%}
+
+}
+
+.day {
+  background-color: #429af5;
+}
+
+.night {
+  background-color: #543358;
+}
+
+.sky {
+  border-radius: 50%;
+  transition: all ease-in-out 5s;
+  transform-origin: center;
+  width: 200vw;
+  height: 200vh;
+  left:0;
+  top: 0;
+  position: fixed;
+  z-index: 0;
+}
+
+.orbit {
+  width:100%;
+  height:100%;
+}
+.night .orbit {
+  animation: sun-set-animation 1 ease-in-out 3s;
+  transform: rotate(180deg);
+
+}
+
+.day .orbit {
+  animation: sun-rise-animation 1 ease-in-out 3s;
+  transform: rotate(0deg);
+}
+
+.sun {
+  top: 11.5%;
+  left: 11.5%;
+  position:absolute;
+  width: 100px;
+  height: 100px;
+  background-color:white;
+  border-radius: 50%;
+}
+
+.moon {
+  bottom: 11.5%;
+  right: 11.5%;
+  position:absolute;
+  width: 100px;
+  height: 100px;
+  background-color:#ffeac5;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  background-image: url('./parathemoon.jpg');
+  background-size: cover;
+}
+
+
+.star {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.night .star {
+  background-color: rgba(255,255,255,1);
+  transition: all linear 1s 1s;
+
+}
+
+
+.day .star {
+  background-color: rgba(255,255,255);
+  transition: all linear 1s 0s;
+
+}
+
+.night .ground {
+
+  background-color: #ABA5C5;
+
+}
+.day .ground{
+  background-color: #ccb09b;
+}
+
+
+.Cloud {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  opacity: 0.9;
+  animation: cloud-float-animation infinite linear;
+  transition: fill linear 3s;
+
+}
+
+
+
+.night .Cloud circle {
+  animation: sunset-cloud-animation 1 linear 3s;
+}
+
+.night .Cloud circle {
+  fill: #fff9eb;
+}
+
+@keyframes cloud-float-animation {
+  0%   { left: -50%; }
+  100% { left: 150%; }
+}
+
+
+@keyframes sunset-cloud-animation {
+  0%   { fill: #fff; }
+  50%   { fill: #ffd3f1; }
+  100% { fill: #fff9eb; }
+}
+
+
+
+
+.Cloud circle {
+  fill: white;
+}

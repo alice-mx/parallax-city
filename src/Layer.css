@@ -1,0 +1,32 @@
+.Layer  {
+  width: 100%;
+
+}
+
+.ground {
+  position: fixed;
+  width: 200vw;
+  left: -50vw;
+  height: 240px;
+  transition: background-color linear 3s;
+  transform-origin: top;
+
+}
+
+.collection {
+  position: fixed;
+  left: 0;
+  width:100%;
+  display:inline-block;
+  transform-origin: bottom;
+  white-space: nowrap;
+
+
+}
+.mist {
+  height: 200vh;
+  width: 100vw;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0.3), rgba(255,255,255,0.0));
+  position: fixed;
+
+}

@@ -1,0 +1,58 @@
+
+
+@keyframes train-journey-animation {
+  0%   { left: -400px; }
+  100% { left: 100%; }
+}
+
+.Train {
+  width: auto;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 5%;
+  z-index: 5;
+  top: -48px;
+  position: absolute;
+  animation: train-journey-animation infinite 8s 4s linear alternate both;
+}
+
+.day .Train .carriage {
+  background-color: #d9d7e0;
+}
+
+.night .Train .carriage {
+  background-color: #6d516f;
+}
+.Train .carriage {
+  width: 150px;
+  height: 50px;
+  margin: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  transition: background-color linear 3s;
+  overflow: hidden;
+}
+
+.Train .carriage .window {
+  display: inline-block;
+  height: 50%;
+  width: 46%;
+  margin: 2px;
+}
+
+.Train .carriage:first-child {
+  width: 50px;
+  border-top-left-radius: 100%;
+}
+
+.Train .carriage:first-child .window{
+  width:46px;
+}
+
+
+
+
+.Train .carriage:last-child {
+  width: 50px;
+  border-top-right-radius: 100%;
+}

@@ -1,0 +1,138 @@
+
+.Building {
+  box-sizing: border-box;
+  font-weight: lighter;
+  display: inline-block;
+  transition: all linear 3s;
+  position: relative;
+  white-space: normal;
+  margin-bottom: -6px;
+
+}
+
+.Building .body {
+  background-color: #ABA5C5;
+  max-heigth: 700px;
+  display: inline-block;
+  padding: 2px;
+  transition: background-color linear 3s;
+  margin: 2px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 98%;
+  bottom: 0;
+
+
+}
+
+.shop {
+  width:100px;
+  min-height: 50px;
+  max-height:100px;
+}
+
+.office {
+  width: 250px;
+  min-height: 100px;
+  max-height: 250px;
+}
+
+
+
+.skyscraper {
+  width: 100px;
+  min-height: 450px;
+  max-height: 650px;
+
+}
+
+.Building.sparse {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Building.dense {
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.Building.connected {
+  margin-left: 0;
+}
+
+
+
+
+.window.small {
+  width:10px;
+  height:10px;
+}
+.window.tall {
+  height: 50px;
+}
+
+.window.blank {
+  opacity: 0;
+}
+
+.window.short {
+  height: 15px;
+}
+
+.window.wide {
+  width: 45%;
+  max-height: 15px;
+}
+
+.window.mediumWidth {
+  width: 29%;
+  max-height: 15px;
+}
+
+
+
+.window.skinny {
+  width: 10%;
+  margin: 2%;
+}
+
+
+.window {
+  margin: 2px;
+  width: 23px;
+  height: 23px;
+  background-color: #525a63;
+  transition: all linear 1.5s;
+  display: inline-block;
+}
+
+.night .window {
+  background-color:  #ffeac5;
+}
+
+
+.Building .space {
+  margin: 2px;
+  width: 23px;
+  height: 23px;
+
+}
+
+
+.day .color1 {
+  background-color: #e9e5ff;
+}
+
+.day .color2 {
+  background-color: #ffb37c
+}
+
+.day .color3 {
+  background-color: #ccb09b;
+}
+
+.day .color4 {
+  background-color: #c1dfff;
+}

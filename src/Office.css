@@ -1,0 +1,35 @@
+
+.Office {
+  width: 155px;
+  height: 130px;
+  margin: 2%;
+  background-color: rgb(255,255,255);
+  box-sizing: border-box;
+  font-weight: lighter;
+  display: inline-block;
+  overflow: hidden;
+
+}
+
+.Office .body {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  vertical-align: middle;
+    margin-right: -1px;
+
+}
+
+
+.Office .header {
+  padding: 5px;
+}
+
+.Office .window {
+  margin: 2px;
+  width: 150px;
+  height: 23px;
+  background-color: #ABA5C5;
+  box-shadow: inset 0px 1px 3px 1px #689CE7 ;
+
+}
